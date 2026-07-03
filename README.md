@@ -2,6 +2,8 @@
 
 Personal website built with Vite, React, TypeScript, and Tailwind CSS.
 
+**Live:** [ai-test-two-lemon.vercel.app](https://ai-test-two-lemon.vercel.app/)
+
 ## Features
 
 - Lighthouse-friendly performance
