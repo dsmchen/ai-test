@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,6 +9,10 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
+      <Helmet>
+        <title>Doris — Frontend Engineer</title>
+        <meta name="description" content="Frontend engineer building modern, performant web experiences with React and TypeScript." />
+      </Helmet>
       <Header />
       <main className="pt-16">
         <Hero />
