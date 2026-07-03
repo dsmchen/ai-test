@@ -31,7 +31,7 @@ export default function Projects() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="bg-white dark:bg-linkedin-950 rounded-xl p-6 shadow-sm border border-linkedin-100 dark:border-linkedin-800 hover:shadow-md transition-shadow"
+              className="bg-white dark:bg-linkedin-950 rounded-xl p-6 shadow-sm border border-linkedin-100 dark:border-linkedin-800 hover:shadow-md hover:-translate-y-1 hover:scale-[1.02] transition-all spring-transition"
             >
               <h3 className="text-xl font-semibold text-linkedin-900 dark:text-linkedin-50 mb-2">
                 {project.title}

@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-linkedin-950/90 backdrop-blur-sm border-b border-linkedin-100 dark:border-linkedin-800">
       <nav className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#" className="text-xl font-semibold text-linkedin-900 dark:text-linkedin-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 rounded">
+        <a href="#" className="text-xl font-semibold text-linkedin-900 dark:text-linkedin-50 hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 rounded">
           Doris
         </a>
 

@@ -6,6 +6,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AnimateOnScroll from './components/AnimateOnScroll'
 
 function App() {
   return (
@@ -18,9 +19,9 @@ function App() {
       <Header />
       <main id="main-content" className="pt-16">
         <Hero />
-        <About />
-        <Projects />
-        <Contact />
+        <AnimateOnScroll animation="animate-fade-up"><About /></AnimateOnScroll>
+        <AnimateOnScroll animation="animate-scale-in"><Projects /></AnimateOnScroll>
+        <AnimateOnScroll animation="animate-fade-up"><Contact /></AnimateOnScroll>
       </main>
       <Footer />
     </>

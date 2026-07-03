@@ -96,7 +96,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full bg-linkedin-500 dark:bg-linkedin-400 text-white dark:text-linkedin-950 py-2.5 rounded-lg font-medium hover:bg-linkedin-600 dark:hover:bg-linkedin-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 transition-colors"
+              className="w-full bg-linkedin-500 dark:bg-linkedin-400 text-white dark:text-linkedin-950 py-2.5 rounded-lg font-medium hover:bg-linkedin-600 dark:hover:bg-linkedin-500 hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 transition-all spring-transition"
             >
               Send message
             </button>
