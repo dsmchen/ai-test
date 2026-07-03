@@ -79,6 +79,13 @@ Add advanced CSS animations inspired by Josh Comeau's site:
 - Use `@keyframes` for multi-step animations, `transition` for simple state changes
 - Always wrap animations in `@media (prefers-reduced-motion: no-preference)` and provide a static fallback under `prefers-reduced-motion: reduce`
 
+### Performance
+
+1. Optimize images — use AVIF/WebP formats with a `<picture>` element or `srcset`, set explicit dimensions, enable lazy loading with `loading="lazy"`
+2. Implement code splitting and lazy loading — use `React.lazy()` + `Suspense` per section/route to reduce initial bundle size
+3. Add bundle analysis via `vite-plugin-visualizer` to monitor what's shipped
+4. Self-host fonts (already covered in Setup)
+
 ### Deploy
 
 1. Deploy to Vercel with zero config
