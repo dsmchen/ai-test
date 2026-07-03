@@ -1,12 +1,14 @@
+import { lazy, Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
 import SkipLink from './components/SkipLink'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import About from './components/About'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
 import AnimateOnScroll from './components/AnimateOnScroll'
+
+const About = lazy(() => import('./components/About'))
+const Projects = lazy(() => import('./components/Projects'))
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
   return (
@@ -19,11 +21,17 @@ function App() {
       <Header />
       <main id="main-content" className="pt-16">
         <Hero />
-        <AnimateOnScroll animation="animate-fade-up"><About /></AnimateOnScroll>
-        <AnimateOnScroll animation="animate-scale-in"><Projects /></AnimateOnScroll>
-        <AnimateOnScroll animation="animate-fade-up"><Contact /></AnimateOnScroll>
+        <Suspense fallback={null}>
+          <AnimateOnScroll animation="animate-fade-up"><About /></AnimateOnScroll>
+        </Suspense>
+        <Suspense fallback={null}>
+          <AnimateOnScroll animation="animate-scale-in"><Projects /></AnimateOnScroll>
+        </Suspense>
+        <Suspense fallback={null}>
+          <AnimateOnScroll animation="animate-fade-up"><Contact /></AnimateOnScroll>
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}><Footer /></Suspense>
     </>
   )
 }
