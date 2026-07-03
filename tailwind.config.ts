@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        blue: {
+        linkedin: {
           50: '#f0f5ff',
           100: '#e0eaff',
           200: '#b8d4fe',
