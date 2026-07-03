@@ -18,7 +18,7 @@ export default function ThemeToggle() {
     <button
       onClick={() => setDark((prev) => !prev)}
       aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
-      className="p-2 text-linkedin-700 hover:text-linkedin-500 transition-colors"
+      className="p-2 text-linkedin-700 hover:text-linkedin-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 rounded transition-colors"
     >
       {dark ? (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>

@@ -10,7 +10,7 @@ export default function Hero() {
         </p>
         <a
           href="#projects"
-          className="inline-block bg-linkedin-500 dark:bg-linkedin-400 text-white dark:text-linkedin-950 px-6 py-3 rounded-lg font-medium hover:bg-linkedin-600 dark:hover:bg-linkedin-500 transition-colors"
+          className="inline-block bg-linkedin-500 dark:bg-linkedin-400 text-white dark:text-linkedin-950 px-6 py-3 rounded-lg font-medium hover:bg-linkedin-600 dark:hover:bg-linkedin-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 transition-colors"
         >
           See my work
         </a>

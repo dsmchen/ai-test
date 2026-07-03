@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-linkedin-950/90 backdrop-blur-sm border-b border-linkedin-100 dark:border-linkedin-800">
       <nav className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#" className="text-xl font-semibold text-linkedin-900 dark:text-linkedin-50">
+        <a href="#" className="text-xl font-semibold text-linkedin-900 dark:text-linkedin-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 rounded">
           Doris
         </a>
 
@@ -52,7 +52,7 @@ export default function Header() {
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="hover:text-linkedin-500 dark:hover:text-linkedin-400 transition-colors"
+                  className="hover:text-linkedin-500 dark:hover:text-linkedin-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 rounded transition-colors"
                 >
                   {item}
                 </a>
@@ -68,7 +68,7 @@ export default function Header() {
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
-            className="md:hidden p-2 -mr-2 text-linkedin-700 dark:text-linkedin-300 hover:text-linkedin-900 dark:hover:text-linkedin-50 transition-colors"
+            className="md:hidden p-2 -mr-2 text-linkedin-700 dark:text-linkedin-300 hover:text-linkedin-900 dark:hover:text-linkedin-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 rounded transition-colors"
           >
             <svg
               className="w-6 h-6"
@@ -107,7 +107,7 @@ export default function Header() {
                 <a
                   href={`#${item.toLowerCase()}`}
                   onClick={close}
-                  className="block py-2 hover:text-linkedin-500 dark:hover:text-linkedin-400 transition-colors"
+                  className="block py-2 hover:text-linkedin-500 dark:hover:text-linkedin-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-linkedin-500 rounded transition-colors"
                 >
                   {item}
                 </a>
