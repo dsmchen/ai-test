@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="pt-16">
         <Hero />
         <About />
         <Projects />
